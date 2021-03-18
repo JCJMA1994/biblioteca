@@ -1,0 +1,18 @@
+1.- Tener instalado python
+2.- Crear una carpeta donde almacenaremos el proyecto
+3.- verficar si se tiene el virtualenv con pip list, sino instalar con pip install vitualenv
+4.- En la carpeta creara se creara un entorno virtual con el comando virtual (nombre del entorno)
+		ejemplo:
+			virtualenv libreria
+5.- Activar el entorno virtual en la carpeta del proyecto 
+		ejemplo:
+			Proyecto/libreria(virtualenv)/Scripts
+			digitar activate
+Retroceder a la carpeta raiz
+6.- Instalar django
+	pip install django
+7.- crear Proyecto en Django
+	django-admin startproject (nombreproyecto)
+
+8.- Iniciar servidor para django
+	python manage.py runserver 
