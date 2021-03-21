@@ -14,5 +14,7 @@ Retroceder a la carpeta raiz
 7.- crear Proyecto en Django
 	django-admin startproject (nombreproyecto)
 
-8.- Iniciar servidor para django
+8.- Iniciar servidor para django, debemos estar en la carpeta del proyecto django
 	python manage.py runserver 
+9.- Creando aplicaciones, creamos una carpeta applications
+	django-admin startapp (nombre aplicacion)
