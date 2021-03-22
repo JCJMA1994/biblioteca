@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Autores</title>
+</head>
+<body>
+<h1>Autores Registrados</h1>
+<table border="1">
+    <thead>
+    <th>ID</th>
+    <th>Nombres</th>
+    <th>Apellidos</th>
+    <th>Nacionalidad</th>
+    <th>Accion</th>
+    </thead>
+    <tbody>
+    {%for a in authors%}
+    <tr>
+        <td>{{a.id}}</td>
+        <td>{{a.name}}</td>
+        <td>{{a.lastname}}</td>
+        <td>{{a.nationality}}</td>
+        <td><a href="{% url 'libreria_app:list-book' a.id%}">Ver Libros</a></td>
+    </tr>
+    {%endfor%}
+    </tbody>
+</table>
+</body>
+</html>

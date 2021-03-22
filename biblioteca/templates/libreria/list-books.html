@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Libros por Autor</title>
+</head>
+<body>
+<h1>Lista Libro por Autores Registrados</h1>
+<table border="1">
+    <thead>
+    <th>Titulo</th>
+    <th>Resumen</th>
+    </thead>
+    <tbody>
+    {%for l in books%}
+    <tr>
+        <td>{{l.title}}</td>
+        <td>{{l.resume}}</td>
+    </tr>
+    {%endfor%}
+    </tbody>
+</table>
+</body>
+</html>
